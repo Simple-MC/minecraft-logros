@@ -1,13 +1,13 @@
-window.logroData = {
-    name: "¡A picar!",
-    icono: "fa-pickaxe",
-    categoria: "Herramientas",
-    inventoryNed: ["Pico de madera", "Mesa de crafteo"],
-    objetosOpcionales: ["Antorchas", "Horno"],
+window.currentLogro = {
+    name: "¡A Picar!",
+    icono: "pickaxe",
+    categoria: "Supervivencia Básica",
+    inventoryNed: ["Pico de madera", "3x Piedra"],
+    objetosOpcionales: ["Antorchas", "Mesa de trabajo"],
     tutorial: [
-        "Encuentra piedra bajo tierra.",
-        "Pica 3 bloques de adoquín.",
-        "Craftea tu pico de piedra."
+        "Pica hacia abajo en escalera hasta encontrar piedra.",
+        "Extrae al menos 3 bloques de adoquín.",
+        "Craftea el pico de piedra para mayor velocidad."
     ],
-    proTip: "La piedra es el inicio de todo, ¡consíguela rápido!"
+    proTip: "Nunca piques directamente hacia abajo, ¡puedes caer en lava!"
 };
