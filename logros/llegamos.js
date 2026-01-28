@@ -1,13 +1,13 @@
-window.logroData = {
-    name: "A lo profundo",
-    icono: "fa-fire",
-    categoria: "Nether",
-    inventoryNed: ["10x Obsidiana", "Mechero (Pedernal y hierro)"],
-    objetosOpcionales: ["Armadura de Oro (para los Piglins)", "Pico de Diamante"],
+window.currentLogro = {
+    name: "Cómo llegamos aquí",
+    icono: "flask-conical",
+    categoria: "Desafío Final",
+    inventoryNed: ["Pez globo", "Efecto Shulker", "Todas las pociones"],
+    objetosOpcionales: ["Armadura de Netherite", "Tótem"],
     tutorial: [
-        "Construye un marco de 4x5 con bloques de Obsidiana.",
-        "Usa el mechero para encender el interior del marco.",
-        "Cruza el portal morado y espera a que cargue la dimensión."
+        "Lleva a un Shulker al mundo normal.",
+        "Prepara dispensadores con pociones de salpicadura.",
+        "Recibe todos los efectos al mismo tiempo."
     ],
-    proTip: "Lleva siempre un bloque de oro puesto para que los Piglins no te ataquen apenas entres."
+    proTip: "Usa un cubo de leche para quitarte los efectos negativos al terminar."
 };
