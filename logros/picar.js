@@ -1,20 +1,9 @@
-window.logroData = window.logroData || {};
-window.logroData.picar = {
-    id: "picar",
-    name: "¡A Picar!",
-    description: "Construye un pico básico de cualquier material (madera, piedra, etc.).",
-    requirements: {
-        java: "Craftear cualquier pico.",
-        bedrock: "Fabricar un pico usando una mesa de crafteo."
-    },
-    editionSpecific: {
-        java: {
-            parent: "Obtener Madera",
-            xp: 10
-        },
-        bedrock: {
-            gamerscore: 10
-        }
-    },
-    tip: "El pico se craftea con 2 palos y 3 materiales horizontales en la parte superior de la mesa."
+/** Este archivo simula la estructura de un archivo de detalle que se cargaría para una vista de logro individual. */
+window.logroData = {
+    id: 'mine_wood',
+    name: 'Talando árboles',
+    desc: 'El primer paso en la supervivencia. Consigue tu primer tronco de madera.',
+    type: 'Java/Bedrock',
+    prerequisito: null,
+    guia: 'Busca cualquier árbol y utiliza la mano para golpearlo hasta que se rompa. Es lento, ¡pero funciona!'
 };
