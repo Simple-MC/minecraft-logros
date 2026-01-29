@@ -1,41 +1,17 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wiki de Logros de Minecraft</title>
-    <style>
-        body { font-family: Arial, sans-serif; background: #f0f0f0; color: #333; }
-        .header { background: #4CAF50; padding: 20px; color: white; text-align: center; }
-        .container { max-width: 900px; margin: 20px auto; padding: 20px; background: white; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
-        button { padding: 10px 15px; margin: 5px; cursor: pointer; border: none; border-radius: 4px; background: #2196F3; color: white; font-weight: bold; }
-        button:hover { background: #0b7dda; }
-        .logro-card { border: 1px solid #ddd; padding: 15px; margin-top: 10px; background: #fff; border-radius: 4px; }
-        .logro-card h3 { color: #388E3C; margin-top: 0; }
-    </style>
+    <meta charset="UTF-8"><title>TrophyCraft Wiki</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <div class="header">
-        <h1>Wiki de Logros de Minecraft</h1>
-        <p>Explora la base de datos completa de logros para ambas ediciones.</p>
-    </div>
-    <div class="container">
-        <h2>Filtro por Edición</h2>
-        <p>Selecciona la edición para ver los logros:</p>
-
-        <!-- La solución al problema del usuario es garantizar que window.renderLogros exista y se ejecute tras el click. -->
-        <button onclick="window.renderLogros('Java')">Edición Java</button>
-        <button onclick="window.renderLogros('Bedrock')">Edición Bedrock</button>
-        <button onclick="window.renderLogros()">Mostrar Todos</button>
-
-        <h2>Lista de Logros</h2>
-        <div id="logros-container">
-            <!-- Este mensaje será reemplazado inmediatamente si biblioteca.js carga correctamente. -->
-            <p>Cargando datos de logros...</p>
+<body class="bg-[#050505] text-white flex items-center justify-center min-h-screen">
+    <div class="text-center p-12 glass rounded-[3rem] border border-white/5 max-w-3xl">
+        <h1 class="text-7xl font-black mb-4 uppercase italic tracking-tighter">TROPHY<span class="text-green-500 text-6xl">CRAFT</span></h1>
+        <p class="text-gray-500 mb-16 text-[10px] tracking-[0.5em] uppercase">Sincronización Maestra de Logros</p>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <button onclick="window.location.href='wiki.html?ed=java'" class="p-10 bg-blue-600 rounded-[2rem] font-black hover:scale-105 transition-all shadow-2xl shadow-blue-500/20">JAVA EDITION</button>
+            <button onclick="window.location.href='wiki.html?ed=bedrock'" class="p-10 bg-green-600 rounded-[2rem] font-black hover:scale-105 transition-all shadow-2xl shadow-green-500/20">BEDROCK EDITION</button>
         </div>
     </div>
-
-    <!-- Carga de la biblioteca principal de datos y lógica -->
-    <script src="logros/biblioteca.js"></script>
 </body>
 </html>
