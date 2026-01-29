@@ -4,39 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wiki de Logros de Minecraft</title>
-    <link rel="stylesheet" href="public/style.css">
-    <!-- CDN de Lucide Icons -->
-    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body { font-family: Arial, sans-serif; background: #f0f0f0; color: #333; }
+        .header { background: #4CAF50; padding: 20px; color: white; text-align: center; }
+        .container { max-width: 900px; margin: 20px auto; padding: 20px; background: white; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        button { padding: 10px 15px; margin: 5px; cursor: pointer; border: none; border-radius: 4px; background: #2196F3; color: white; font-weight: bold; }
+        button:hover { background: #0b7dda; }
+        .logro-card { border: 1px solid #ddd; padding: 15px; margin-top: 10px; background: #fff; border-radius: 4px; }
+        .logro-card h3 { color: #388E3C; margin-top: 0; }
+    </style>
 </head>
 <body>
-    <header>
-        <i data-lucide="sword" class="header-icon"></i>
-        <h1>Wiki Oscura de Logros de Minecraft</h1>
-        <p>Explora todos los desafíos y avances en las diferentes ediciones del juego.</p>
-    </header>
+    <div class="header">
+        <h1>Wiki de Logros de Minecraft</h1>
+        <p>Explora la base de datos completa de logros para ambas ediciones.</p>
+    </div>
+    <div class="container">
+        <h2>Filtro por Edición</h2>
+        <p>Selecciona la edición para ver los logros:</p>
 
-    <main class="edition-selector">
-        <div class="card java-edition">
-            <i data-lucide="package" class="card-icon java"></i>
-            <h2>Edición Java</h2>
-            <p>La experiencia clásica. Sigue el árbol de avances y las recompensas de XP.</p>
-            <a href="logros/lista.html?edition=java" class="btn">Ver Avances (Java)</a>
+        <!-- La solución al problema del usuario es garantizar que window.renderLogros exista y se ejecute tras el click. -->
+        <button onclick="window.renderLogros('Java')">Edición Java</button>
+        <button onclick="window.renderLogros('Bedrock')">Edición Bedrock</button>
+        <button onclick="window.renderLogros()">Mostrar Todos</button>
+
+        <h2>Lista de Logros</h2>
+        <div id="logros-container">
+            <!-- Este mensaje será reemplazado inmediatamente si biblioteca.js carga correctamente. -->
+            <p>Cargando datos de logros...</p>
         </div>
+    </div>
 
-        <div class="card bedrock-edition">
-            <i data-lucide="gamepad" class="card-icon bedrock"></i>
-            <h2>Edición Bedrock</h2>
-            <p>Logros en consolas, móviles y PC. Rastrea los Gamerscore/Trofeos.</p>
-            <a href="logros/lista.html?edition=bedrock" class="btn">Ver Logros (Bedrock)</a>
-        </div>
-    </main>
-
-    <footer>
-        <p>&copy; 2024 Minecraft Achievement Wiki | Powered by Lucide Icons</p>
-    </footer>
-    <script>
-        // Inicializa Lucide Icons
-        lucide.createIcons();
-    </script>
+    <!-- Carga de la biblioteca principal de datos y lógica -->
+    <script src="logros/biblioteca.js"></script>
 </body>
 </html>
