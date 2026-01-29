@@ -1,20 +1,9 @@
-window.logroData = window.logroData || {};
-window.logroData.matadragon = {
-    id: "matadragon",
-    name: "Libera al End",
-    description: "Mata al Dragón del End.",
-    requirements: {
-        java: "Derrotar al Dragón del End por primera vez.",
-        bedrock: "Derrotar al Dragón del End y ver la secuencia de créditos."
-    },
-    editionSpecific: {
-        java: {
-            parent: "Hemos de ir más Profundo",
-            xp: 1000
-        },
-        bedrock: {
-            gamerscore: 50
-        }
-    },
-    tip: "Asegúrate de destruir todos los cristales de sanación del dragón antes de intentar el combate directo."
+/** Este archivo simula la estructura de un archivo de detalle que se cargaría para una vista de logro individual. */
+window.logroData = {
+    id: 'liberando_end',
+    name: 'Liberando al End',
+    desc: 'Mata al temido Dragón del End y escapa de la dimensión.',
+    type: 'Java/Bedrock',
+    prerequisito: 'Viaje al End',
+    guia: 'Destruye los cristales sanadores primero. ¡Usa arcos o pociones de daño instantáneo!'
 };
