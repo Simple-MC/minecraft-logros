@@ -1,0 +1,16 @@
+[
+  {
+    "id": "logro_01",
+    "name": "Repo Genesis",
+    "desc": "Initial commit and structure setup based on ID 67daniel_prro2023567.",
+    "difficulty": "★☆☆☆☆",
+    "icon": "✨"
+  },
+  {
+    "id": "logro_02",
+    "name": "Structure Builder",
+    "desc": "Expanded core repository structure by adding the 'src' directory and documentation.",
+    "difficulty": "★★☆☆☆",
+    "icon": "🏗️"
+  }
+]
