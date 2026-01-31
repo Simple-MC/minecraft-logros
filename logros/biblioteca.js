@@ -1,5 +1,8 @@
 // Esta es tu base de datos central de logros.
-// Ahora incluye la propiedad 'bedrock' para filtrar por plataforma.
+// Clasificación:
+// Bedrock: true -> Solo Bedrock
+// Java: true -> Solo Java
+// Else -> Ambas plataformas
 
 window.bibliotecaLogros = [
     {
@@ -7,7 +10,7 @@ window.bibliotecaLogros = [
         icono: "pickaxe",
         categoria: "Overworld",
         dificultad: "Facil",
-        bedrock: true, // Disponible en ambas plataformas
+        Else: true, // Disponible en ambas plataformas
         inventoryNed: ["Pico de madera", "3x Adoquín"],
         tutorial: [
             "Baja a la capa de piedra y extrae adoquín.",
@@ -20,7 +23,7 @@ window.bibliotecaLogros = [
         icono: "flame",
         categoria: "Nether",
         dificultad: "Media",
-        bedrock: true,
+        Else: true, // Disponible en ambas plataformas
         inventoryNed: ["10x Obsidiana", "Mechero", "Armadura de Oro"],
         tutorial: [
             "Construye un marco de obsidiana y enciéndelo con el mechero.",
@@ -33,8 +36,7 @@ window.bibliotecaLogros = [
         icono: "smartphone",
         categoria: "Overworld",
         dificultad: "Facil",
-        bedrock: true, // Solo aparecerá si eliges Bedrock
-        java: false,
+        Bedrock: true, // Solo Bedrock
         inventoryNed: ["Pantalla táctil", "Controlador"],
         tutorial: [
             "Este logro solo se ve en la versión de Bedrock.",
@@ -47,7 +49,7 @@ window.bibliotecaLogros = [
         icono: "flask-conical",
         categoria: "End",
         dificultad: "Extrema",
-        bedrock: false, // Logro exclusivo de Java Edition
+        Java: true, // Solo Java
         inventoryNed: ["Pez globo", "Efecto Shulker", "Todas las pociones"],
         tutorial: [
             "Recibe todos los efectos de estado simultáneamente.",
@@ -60,7 +62,7 @@ window.bibliotecaLogros = [
         icono: "trophy",
         categoria: "End",
         dificultad: "Dificil",
-        bedrock: true,
+        Else: true, // Disponible en ambas plataformas
         inventoryNed: ["Arco", "Camas", "Perlas de Ender"],
         tutorial: [
             "Viaja al End y derrota a la Dragona.",
